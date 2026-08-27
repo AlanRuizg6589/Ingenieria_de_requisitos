@@ -30,7 +30,7 @@ Para mejorar la seccion de busqueda y organizacion de datos de los libros se usa
 
 Entidad - Libro
 
-Atributos - Nombre [Permitira una busqueda mas rapida solo por su nombre]
+Atributos - **Nombre** [Permitira una busqueda mas rapida solo por su nombre]
 
           - Entidad auxiliar; Genero de libro [Permite clasificar a todos los libros por algun tipo de genero, permitiendo la opcion de busqueda por genero]
 
@@ -39,3 +39,5 @@ Atributos - Nombre [Permitira una busqueda mas rapida solo por su nombre]
           - Stock [Permite conocer la cantidad de libros en esta sede (Solo en esta sede)]
 
           - ISBN (Es un numero unico de cada libro (como entidad, no en cantidad))
+
+Con todos estos datos, **el registro de un libro estaria completo** y gracias a todas estas categorias la busqueda de un libro en especifico se facilitara.
