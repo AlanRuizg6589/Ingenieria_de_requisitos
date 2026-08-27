@@ -1,2 +1,2 @@
 # Ingenieria_de_requisitos
-Informacion importante para trabajos futuruos.
+Informacion importante para trabajos futuros.
