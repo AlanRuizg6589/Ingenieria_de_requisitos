@@ -37,3 +37,5 @@ Atributos - Nombre [Permitira una busqueda mas rapida solo por su nombre]
           - Entidad auxiliar; Autor [Permite registrarle al libro autor o distinto autores.]
 
           - Stock [Permite conocer la cantidad de libros en esta sede (Solo en esta sede)]
+
+          - ISBN (Es un numero unico de cada libro (como entidad, no en cantidad))
