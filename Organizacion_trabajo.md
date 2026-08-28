@@ -79,6 +79,8 @@ Para esto crearemos las siguientes entidades:
 
             - Nombre Sección (Permite diferencias cada Sección de la otra, se puede usar cualquier tipo de dato para el nombre).
 
+            - ¿Es arrendable? (Permite conocer si es una sección en la cual varios o un solo alumno lo puede arrendar para su estudio personal).
+
 Con estas entidades creadas, podemos organizar mejor la biblioteca de la siguiente forma:
 
 *Varios libros (Incluyendo su Stock completo) se registraran como perteneciente a una estanteria en especifico. El ISBN del libro no se tiene que encontrar en mas de una estanteria distinta a la inicial; Relación 1:N.*
@@ -118,7 +120,9 @@ Para esto crearemos las siguientes entidades:
 
             - Fecha_Devolución (Para conocer el momento en el que el usuario tiene que devolver el libro arrendado).
 
-Con estas 3 entidades creadas (Se incluye la entidad Libro) se puede crear un sistema de base de datos funcional que registre al usuario cuando hace una arriendo. Las conexiones serian de la siguiente forma:
+Con estas 3 entidades creadas (Se incluye la entidad Libro) se puede crear un sistema de base de datos funcional que registre al usuario cuando hace una arriendo. 
+
+Las conexiones serian de la siguiente forma:
 
 *La entidad Arriendo_libro tendra una Relación 1:1 con el Libro registrado (Que el usuario desee)*
 
@@ -126,4 +130,33 @@ Con estas 3 entidades creadas (Se incluye la entidad Libro) se puede crear un si
 
 Con esto se podra mantener a raya a cualquier usuario que desee arrendar un libro (o varios libros).
 
-(Todo esta escrito a mano).
+Problema 4:
+
+**Además, los usuarios tienen problemas para encontrar que secciónes de estudio estan disponibles y los bibliotecarios deben revisar constantemente los registros personales para conocer el estado de cada sección.**
+
+Para este problema tenemos un pilar fundamental ya preparado; La entidad Usuario con sus atributos explicados. Con esto tenemos que complementarlo para que, parecido al sistema de arriendo de libros, exista uno que sea para el de secciónes.
+
+Para esto crearemos la siguiente entidad:
+
+**Entidad - Arriendo_Sección**
+
+*Atributos:*
+
+            - ID (Permite diferenciar a cada arriendo de sección registrado en la base de datos).
+            
+            - Hora_inicio (Para conocer el momento en el comenzara el arriendo de la sección).
+
+            - Hora_final (Para conocer el momento en el terminara el arriendo de la sección).
+
+            - Fecha (Permite conocer el momento que se arrendara la sede especifica).    
+
+Con la entidad Usuario/Alumno, Arriendo_sección y Seccion se puede definir un sistema funcional para que los usuarios puedan arrendar secciones en la sede.
+
+Las conexiones serian de la siguiente forma:
+
+*Una sección puede tener varios Arriendo_sección a la vez, pero cada Arriendo_sección solo le pertenecen a una sola sección (1:N).*
+
+*Un Usuario puede tener varios Arriendo_sección en su historia, pero cada Arriendo_sección solo le pertenece a un Usuario en especifico (1:N).*
+
+Con esto, un solo Usuario o varios a la vez pueden arrendar secciones especificas a la vez, con todos estos datos siendo guardados en el sistema.
+
