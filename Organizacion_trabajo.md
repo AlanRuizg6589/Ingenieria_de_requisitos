@@ -160,3 +160,28 @@ Las conexiones serian de la siguiente forma:
 
 Con esto, un solo Usuario o varios a la vez pueden arrendar secciones especificas a la vez, con todos estos datos siendo guardados en el sistema.
 
+Problema 5:
+
+**También existen dificultades para controlar los préstamos atrasados y para mantener actualizada la información de los usuarios. Por esta razón, la biblioteca necesita un sistema que permita gestionar los libros, usuarios y préstamos de manera más rápida y organizada.**
+
+Este es el problema mas distinto, *aqui no se tienen que crear variables*; se modifica y crean atributos dentro de entidades ya existentes dentro de nuestra base de datos.
+
+Modificaremos primero la Entidad Usuarios:
+
+*Atributos: (Nuevos +)*
+
+            - Faltas_arriendo_libros_usuario (Empezara idealmente en 0, permite mantener registro de cuantas faltas a tenido el usuario en la sección de arriendo de libros. El máximo de faltas y la razón de estas no lo decidimos nosotros)
+
+            - Faltas_arriendo_sección_usuario (Empezara idealmente en 0, permite mantener registro de cuantas faltas a tenido el usuario en la sección de arriendo de secciones. El máximo de faltas y la razón de estas no lo decidimos nosotros)
+
+Con esto se podra ver exactamente la cantidad de faltas que tiene un usuario en especifico, en estos dos sectores.
+
+Pero para que se encuentre más completo el sistema es necesario mantener registro en **donde** se registro la falta.
+
+Agregaremos el siguiente atributo en Arriendo_libros y Arriendo_secciones (El mismo atributo de la misma forma con las mismas caracteristicas):
+
+*Atributos: (Nuevos +)*
+
+            - ¿Cometio una falta? {bool, True - False} (Permite que en cada registro, al momento de entregarlo se registre si cometio una falta o no. Puede ser manualmente o automáticamente, esto no lo decidimos nosotros)
+
+Con todos estos datos agregados, se puede tener un sistema funcional en el cual se puede mantener a raya a todos los usuarios. Todas las penalizaciones no la decidimos nosotros.
