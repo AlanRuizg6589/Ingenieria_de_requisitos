@@ -185,3 +185,5 @@ Agregaremos el siguiente atributo en Arriendo_libros y Arriendo_secciones (El mi
             - ¿Cometio una falta? {bool, True - False} (Permite que en cada registro, al momento de entregarlo se registre si cometio una falta o no. Puede ser manualmente o automáticamente, esto no lo decidimos nosotros)
 
 Con todos estos datos agregados, se puede tener un sistema funcional en el cual se puede mantener a raya a todos los usuarios. Todas las penalizaciones no la decidimos nosotros.
+
+Por ahora creo que esto es todo lo que hay que hacer.
