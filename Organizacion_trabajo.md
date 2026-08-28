@@ -125,3 +125,5 @@ Con estas 3 entidades creadas (Se incluye la entidad Libro) se puede crear un si
 *El usuario podra tener varios Arriendo_libro distintos, pero cada uno solo pertenecera a un Usuario en especifico (Relación 1:N).*
 
 Con esto se podra mantener a raya a cualquier usuario que desee arrendar un libro (o varios libros).
+
+(Todo esta escrito a mano).
