@@ -1,33 +1,19 @@
-Problema actual presentado por nosotros (Sobre este problema vamos a presentar en la disertación para la siguiente "prueba"):
-***Mi nombre es José Antonio de la Mercedes, soy dueño de una antigua biblioteca personal que se encuentra dentro de Puerto Montt.***
+Problema actual presentado por nosotros (Sobre este problema vamos a presentar en la disertacion para la siguiente "prueba"):
 
-***Nunca me encontrado muy adaptado al ambiente de hoy en día, ni a la tecnología. Por esta razon seguí un modus operandi que consideraba que funcionaba muy bien.***
+***Una biblioteca presenta dificultades para organizar y administrar sus libros debido a que actualmente registra la información de manera manual (En cuadernos personales).***
+***A su vez, no saben exactamente donde se encuentra cada libro, porque no tienen divisiones predefinidas en la biblioteca.***
 
-***Tenía gente que trabaja en mi biblioteca hace años, y les pagaba muy bien. Pero tarde o temprano se retiraron del área y ahora e buscado nuevos empleados.***
+***Esto provoca que sea difícil saber qué libros están disponibles, cuáles están prestados y cuándo deben ser devueltos, y cual es el estudiante respnasable. Además, los usuarios tienen problemas para encontrar que secciónes de estudio estan disponibles y los bibliotecarios deben revisar constantemente los registros personales para conocer el estado de cada sección.*** 
 
-***Gracias a esto e recibido muchas quejas de mis empleados, que soy muy anticuado y esas cosas. No estoy muy acuerdo, pero tomare sus palabras.***
-
-***Me comentaron que es incoveniente tener que registrar todos los libros a mano, que es problematico tener que usar un libro personal para tener en cuenta a todos los libros que existen dentro de la biblioteca. Esto no pasaba antes, pense que era facil saber de memoria que libros tenemos y donde se encuentran.***
-
-***Tambien me comentaron que la biblioteca no tiene sectores claros ni a su vez divisiones. Y que a su vez, un libro (independiente de la cantidad) se deberia encontrar dentro de una sola estanteria, en vez de guardarlo en la que sea***
-
-***También estan molestos porque decidi recientemente agregar un sistema de libros prestados. Pense que seria facil de llevar para ellos, pero me dijeron que no existe forma clara de mantener registro de quien tiene un libro y cual tiene exactamente.***
-
-***Existe un sector que en teoría deberia funcionar para que la gente lo pueda arrendar, pero mis trabajadores se rehúsan a usarlo, porque "es inconveniente saber cuando y cual esta siendo usado".*** 
-
-***A su vez me comentaron que no existe forma de tratar con los gente que tiene prestamos atrasados o causan inconvenientes.***
-
-***Nunca me había dado cuenta de estos problemas, tengo esta biblioteca hace años, la razón por la que la tengo abierta es por diversión, igualmente tengo mucho dinero.***
-
-***Considerando que no tengo mucho conocimiento, quisiera un sistema en el cual se solucione todos estos problemas. Confiare en la palabra de mis empleados, todo para que la experiencia de la gente que quiera estudiar sea mejor, y que las siguientes generaciones sean cada vez más inteligente."***
+***También existen dificultades para controlar los préstamos atrasados y para mantener actualizada la información de los usuarios. Por esta razón, la biblioteca necesita un sistema que permita gestionar los libros, usuarios y préstamos de manera más rápida y organizada.***
 👥
 Actores del problema:
 
-1. Trabajador → Registra libros, gestiona sectores de estudio, gestiona préstamos y controla devoluciones.
+1. Bibliotecario → Registra libros, gestiona préstamos y controla devoluciones.
 
-2. Usuario → Busca libros y solicita préstamos, o solicita sectores de estudio.
+2. Usuario/Alumno → Busca libros y solicita préstamos.
 
-3. Dueño → Administra la información del sistema y de los usuarios.
+3. Administrador → Administra la información del sistema y de los usuarios.
 
 4. Proveedor de libros → Entrega nuevos libros a la biblioteca y proporciona información sobre ellos.
 
@@ -37,7 +23,7 @@ Entidades (Pueden aumentar en el futuro):
 
 -Ejemplar
 
--Usuario
+-Alumno
 
 -Prestamo
 
@@ -49,13 +35,7 @@ Entidades (Pueden aumentar en el futuro):
 
 Problema 1:
 
-El dueño de la biblioteca comenta lo siguiente:
-
-***"Me comentaron que es incoveniente tener que registrar todos los libros a mano, que es problematico tener que usar un libro personal para tener en cuenta a todos los libros que existen dentro de la biblioteca."***
-
-y se puede interpretar de la siguiente forma:
-
-**"La biblioteca presenta dificultades para organizar y administrar sus libros debido a que actualmente registra la información de manera manual (En cuadernos personales). "**
+**"Una biblioteca presenta dificultades para organizar y administrar sus libros debido a que actualmente registra la información de manera manual (En cuadernos personales). "**
 
 Para mejorar el registro de cada libro, crearemos una **entidad libro** que almacene todos los datos importantes que facilitaran la busqueda.
 
@@ -78,13 +58,7 @@ Con todos estos datos, **el registro de un libro estaria completo** y gracias a 
 
 Problema 2:
 
-El dueño comenta lo siguiente:
-
-***"Tambien me comentaron que la biblioteca no tiene sectores claros ni a su vez divisiones. Y que a su vez, un libro (independiente de la cantidad) se deberia encontrar dentro de una sola estanteria, en vez de guardarlo en la que sea"***
-
-Se puede interpretar de la siguiente forma:
-
-**La biblioteca necesita ser divida en secciones (con nombre), con varias estanterias en cada una. Con la restricción de que un libro exacto (ISBN) no se puede encontrar en varias estanterias a la vez.**
+**A su vez, no saben exactamente donde se encuentra cada libro, porque no tienen divisiones predefinidas en la biblioteca.**
 
 Al tener la entidad de libro completa, tenemos que buscar formas de dividir la sede de la biblioteca para ubicar cada libro en zonas especificas.
 
@@ -117,13 +91,7 @@ Con esta distribución, se podra dividir varias estanterias distintas en seccion
 
 Problema 3:
 
-El dueño dice lo siguiente:
-
-***"También estan molestos porque decidi recientemente agregar un sistema de libros prestados. Pense que seria facil de llevar para ellos, pero me dijeron que no existe forma clara de mantener registro de quien tiene un libro y cual tiene exactamente."***
-
-Se puede interpretar de la siguiente manera:
-
-*Es dificil saber qué libros están disponibles, cuáles están prestados, cuándo deben ser devueltos y cual es el usuario responsable.*
+*Esto provoca que sea difícil saber qué libros están disponibles, cuáles están prestados, cuándo deben ser devueltos y cual es el alumno responsable.*
 
 Para este problema, tenemos una entidad *ya definida* siendo el **Libro**. Ahora solo tenemos que complementarlo para que existan un sistema funcional de registros.
 
@@ -164,13 +132,7 @@ Con esto se podra mantener a raya a cualquier usuario que desee arrendar un libr
 
 Problema 4:
 
-El dueño dice lo siguiente:
-
-***"Existe un sector que en teoría deberia funcionar para que la gente lo pueda arrendar, pero mis trabajadores se rehúsan a usarlo, porque "es inconveniente saber cuando y cual esta siendo usado"."***
-
-Se puede interpretar de la siguiente forma:
-
-**El sector de zona de estudio se encuentra en desuso, manteniendo el mismo problema de dificultad para mantener registro de quien lo esta usando, cual sección esta siendo usada y en que momento se esta arrendando**
+**Además, los usuarios tienen problemas para encontrar que secciónes de estudio estan disponibles y los bibliotecarios deben revisar constantemente los registros personales para conocer el estado de cada sección.**
 
 Para este problema tenemos un pilar fundamental ya preparado; La entidad Usuario con sus atributos explicados. Con esto tenemos que complementarlo para que, parecido al sistema de arriendo de libros, exista uno que sea para el de secciónes.
 
@@ -200,13 +162,7 @@ Con esto, un solo Usuario o varios a la vez pueden arrendar secciones especifica
 
 Problema 5:
 
-El dueño dice lo siguiente:
-
-***"A su vez me comentaron que no existe forma de tratar con los gente que tiene prestamos atrasados o causan inconvenientes."***
-
-Se puede interpretar de la siguiente forma:
-
-**No existe forma clara de tratar a la gente que tiene prestamos atrasados o causa inconveniente en la zona.**
+**También existen dificultades para controlar los préstamos atrasados y para mantener actualizada la información de los usuarios. Por esta razón, la biblioteca necesita un sistema que permita gestionar los libros, usuarios y préstamos de manera más rápida y organizada.**
 
 Este es el problema mas distinto, *aqui no se tienen que crear variables*; se modifica y crean atributos dentro de entidades ya existentes dentro de nuestra base de datos.
 
@@ -230,4 +186,4 @@ Agregaremos el siguiente atributo en Arriendo_libros y Arriendo_secciones (El mi
 
 Con todos estos datos agregados, se puede tener un sistema funcional en el cual se puede mantener a raya a todos los usuarios. Todas las penalizaciones no la decidimos nosotros.
 
-Por ahora creo que esto es todo lo que hay que hacer (Si leen esto y falta algo avisen por el whatsapp).
+Por ahora creo que esto es todo lo que hay que hacer.
