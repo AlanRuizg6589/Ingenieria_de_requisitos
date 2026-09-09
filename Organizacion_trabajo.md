@@ -194,7 +194,7 @@ Las conexiones serian de la siguiente forma:
 
 *Una sección puede tener varios Arriendo_sección a la vez, pero cada Arriendo_sección solo le pertenecen a una sola sección (1:N).*
 
-*Un Usuario puede tener varios Arriendo_sección en su historia, pero cada Arriendo_sección solo le pertenece a un Usuario en especifico (1:N).*
+*Un Usuario puede tener varios Arriendo_sección en su historia, y en un Arriendo_sección pueden participar varios usuarios (N:M).*
 
 Con esto, un solo Usuario o varios a la vez pueden arrendar secciones especificas a la vez, con todos estos datos siendo guardados en el sistema.
 
