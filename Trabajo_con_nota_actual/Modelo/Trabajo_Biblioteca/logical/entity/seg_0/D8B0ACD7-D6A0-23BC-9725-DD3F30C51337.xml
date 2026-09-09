@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D8B0ACD7-D6A0-23BC-9725-DD3F30C51337" name="Libros">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-08 23:40:01 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="96369692-C917-66B8-08F1-341C9F5DED3E">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-08 23:40:01 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_libro" id="6290A6D8-044A-9B44-DD31-89BE2C090BCD">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-08 23:40:01 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ISBN" id="AF4E95A2-867C-CD64-5DFE-8B661637CB21">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:17:02 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Stock" id="F267F975-AA1E-2DB1-539F-50DC072D2BDB">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:16:29 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripción" id="D0DDA900-A807-13D2-6F59-BAE995F36589">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-08 23:40:01 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="DF815037-40AE-98F8-3C52-3B2CB5B85DCF">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:20:41 UTC</createdTime>
+<generatorID>110CD849-9732-8CC7-DF23-A810FD1A3939</generatorID>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<referedAttribute>1F57CD98-53E2-BCE5-04D7-EE34F86A82C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F14ECBB-A527-5A1C-5D0C-3B1BAC09EF97" name="Plantilla PK">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-08 23:40:01 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>96369692-C917-66B8-08F1-341C9F5DED3E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

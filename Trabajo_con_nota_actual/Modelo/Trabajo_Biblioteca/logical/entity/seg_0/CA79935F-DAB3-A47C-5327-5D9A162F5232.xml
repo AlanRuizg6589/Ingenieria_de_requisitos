@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA79935F-DAB3-A47C-5327-5D9A162F5232" name="Estantería">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:19:45 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1F57CD98-53E2-BCE5-04D7-EE34F86A82C7">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:19:45 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_estantería" id="C2B5E94C-6C3E-DEF0-5BA5-FB1EC084F788">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:19:45 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="C476E971-7F70-1269-130E-D2C00DB61A64">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:21:00 UTC</createdTime>
+<generatorID>F1F73D23-12BC-9312-0DE9-E75C64809FB0</generatorID>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<referedAttribute>4E625C9D-C55B-EB33-301C-0BF3C913351B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B46052D8-A9F5-EC93-C87A-00B61FC28ECF" name="Plantilla PK">
+<createdBy>AlanRuiz</createdBy>
+<createdTime>2026-09-09 01:19:45 UTC</createdTime>
+<ownerDesignName>Trabajo_Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="B0081501-FE41-74EF-C34B-703B63B0E231" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1F57CD98-53E2-BCE5-04D7-EE34F86A82C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
