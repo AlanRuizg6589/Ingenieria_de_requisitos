@@ -188,6 +188,16 @@ Para esto crearemos la siguiente entidad:
 
             - Fecha (Permite conocer el momento que se arrendara la sede especifica).    
 
+**Entidad - Estado_sección**
+
+*Atributos*
+
+            - ID
+
+            - Descripción_estado_inicial (el trabajador antes de dar el permiso, tiene que describir vagamente como estaba la sección antes de que se arriende)
+            
+            - Descripción_estado_inicial (Despues de que el usuario/s usen la sección, se requiere una descripción de como se encontraba al final de este)
+
 Con la entidad Usuario/Alumno, Arriendo_sección y Seccion se puede definir un sistema funcional para que los usuarios puedan arrendar secciones en la sede.
 
 Las conexiones serian de la siguiente forma:
@@ -195,6 +205,10 @@ Las conexiones serian de la siguiente forma:
 *Una sección puede tener varios Arriendo_sección a la vez, pero cada Arriendo_sección solo le pertenecen a una sola sección (1:N).*
 
 *Un Usuario puede tener varios Arriendo_sección en su historia, y en un Arriendo_sección pueden participar varios usuarios (N:M).*
+
+*Una Arriendo_sección solo puede tener una descripción unica con fecha precisa sobre el estado-sección, y un estado sección no se puede repetir. (1:1)*
+
+*Una sección puede tener varios estados_sección durante su historia, pero cada arriendo_sección solo pertenecen a un sola sección (1:N)*
 
 Con esto, un solo Usuario o varios a la vez pueden arrendar secciones especificas a la vez, con todos estos datos siendo guardados en el sistema.
 
