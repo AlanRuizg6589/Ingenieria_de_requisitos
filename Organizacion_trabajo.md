@@ -152,6 +152,16 @@ Para esto crearemos las siguientes entidades:
 
             - Fecha_Devolución (Para conocer el momento en el que el usuario tiene que devolver el libro arrendado).
 
+**Entidad - Estado_libro**
+
+*Atributos*
+
+            - ID
+
+            - Descripción_estado_inicial (el trabajador antes de entregar el libro, registra su estado actual de forma vaga)
+            
+            - Descripción_estado_inicial (Despues de que el usuario use el libro y lo entregue, se registra el estado en el cual es entregado)
+
 Con estas 3 entidades creadas (Se incluye la entidad Libro) se puede crear un sistema de base de datos funcional que registre al usuario cuando hace una arriendo. 
 
 Las conexiones serian de la siguiente forma:
@@ -159,6 +169,10 @@ Las conexiones serian de la siguiente forma:
 *La entidad Arriendo_libro tendra una Relación 1:1 con el Libro registrado (Que el usuario desee)*
 
 *El usuario podra tener varios Arriendo_libro distintos, pero cada uno solo pertenecera a un Usuario en especifico (Relación 1:N).*
+
+*Un Arriendo_libro puede tener varios estado_libro, pero cada estado_libro solo pertenecen a un arriendo.*
+
+*Un libro puede tener varios estado_libro durante su historia, pero cada estado_libro solo pertenecen a un solo libro*
 
 Con esto se podra mantener a raya a cualquier usuario que desee arrendar un libro (o varios libros).
 
