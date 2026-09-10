@@ -47,7 +47,7 @@ Entidades (Pueden aumentar en el futuro):
 
 -Proovedor
 
-Problema 1:
+***Problema 1:***
 
 El dueño de la biblioteca comenta lo siguiente:
 
@@ -76,7 +76,7 @@ Para mejorar el registro de cada libro, crearemos una **entidad libro** que alma
 
 Con todos estos datos, **el registro de un libro estaria completo** y gracias a todas estas categorias la busqueda de un libro en especifico se facilitara.
 
-Problema 2:
+***Problema 2:***
 
 El dueño comenta lo siguiente:
 
@@ -115,7 +115,7 @@ Con estas entidades creadas, podemos organizar mejor la biblioteca de la siguien
 
 Con esta distribución, se podra dividir varias estanterias distintas en secciones especificas (Matemáticas, Ciencias, Biología, o lo que el bibliotecario decida) facilitando la busqueda de cada libro mucho más.
 
-Problema 3:
+***Problema 3:***
 
 El dueño dice lo siguiente:
 
@@ -176,8 +176,15 @@ Las conexiones serian de la siguiente forma:
 
 Con esto se podra mantener a raya a cualquier usuario que desee arrendar un libro (o varios libros).
 
-Problema 4:
+***Problema 4:***
 
+
+***DATOS DEL CANVA EXPLICACIÓN, PARA PRESERVARLO:***
+***Una Sección puede tener varios Arriendo_sección durante su historia, pero cada registro pertenece a una sola sección.***
+***Un Usuario puede tener varios Arriendo_sección en su historial, y un Arriendo_sección puede tener varios usuarios a la vez.***
+
+***Cada descripción de estado_sección es unico para un unico arriendo.***
+***Cada estado_sección solo pertenece a un sola sección, pero una sección puede tener varias estado_sección.***
 El dueño dice lo siguiente:
 
 ***"Existe un sector que en teoría deberia funcionar para que la gente lo pueda arrendar, pero mis trabajadores se rehúsan a usarlo, porque "es inconveniente saber cuando y cual esta siendo usado"."***
@@ -226,7 +233,7 @@ Las conexiones serian de la siguiente forma:
 
 Con esto, un solo Usuario o varios a la vez pueden arrendar secciones especificas a la vez, con todos estos datos siendo guardados en el sistema.
 
-Problema 5:
+***Problema 5:***
 
 El dueño dice lo siguiente:
 
